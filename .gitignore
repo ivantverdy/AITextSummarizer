@@ -1,3 +1,5 @@
 .env
 env
 history.log
+.idea
+__pycache__

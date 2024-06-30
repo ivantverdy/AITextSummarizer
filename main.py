@@ -49,7 +49,7 @@ async def summarize(request: Request, request_data: dict = Body(...)):
 
         # Generate the summary
         result = summarizer(f"Summarize this: {text}")
-
+        logging.info("Successful summarization")
         # Return the result as a JSON response
         return Response(
             content=json.dumps(result, indent=4, ensure_ascii=False),

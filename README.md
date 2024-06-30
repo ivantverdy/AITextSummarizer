@@ -50,7 +50,7 @@ This is a FastAPI application that provides a summarization service using Huggin
 1. Start the FastAPI server:
 
     ```sh
-    python main.py
+     uvicorn main:app --reload
     ```
 
     The server will start at `http://127.0.0.1:8000`.
